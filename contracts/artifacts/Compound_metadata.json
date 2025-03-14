@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "principal",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateCompoundInterest",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Compound.sol": "Compound"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Compound.sol": {
+			"keccak256": "0x4c93c8cb7fa7418b18d198376c154f8f5fe6a1ae6545d7e8d5a39e52a0b55b91",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c9c25a74cba48f82ecac23ac1469c3aa49de5120af78acfddff4d3766272ba78",
+				"dweb:/ipfs/QmdQW81TWKuJdzqj4h8GKunvUtPZf3wFA4ZGuosEtLmHoq"
+			]
+		}
+	},
+	"version": 1
+}
