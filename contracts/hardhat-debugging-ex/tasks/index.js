@@ -1,13 +1,8 @@
 task("deploy", "Deploys the contract", async (taskArgs, hre) => {
 
-    if(!taskArgs.unlockTime){
+    const contractFactory = await hre.ethers.getContractFactory("BuggyRewardPool");
+    const contract = await contractFactory.deploy();
+    await contract.deployed();
 
-        throw new Error("unlockTime is required") 
-    }
-
-    const contractFactory = await hre.ethers.getContractFactory("Lock");
-    const contract = await contractFactory.deploy(taskArgs.unlockTime);
-
-    console.log("Contract deployed to", contract.target);
-})
-.addParam("unlockTime", "");
+    console.log("Contract deployed to", contract.address);
+});
