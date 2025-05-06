@@ -9,9 +9,8 @@ import "hardhat/console.sol";
     // Reward rate: 1% of deposit per day 
     uint256 constant DAILY_REWARD_RATE = 1;
     event Deposited(address user, uint256 amount);
-    event Withdrawn(address user, uint256 amount,
-    uint256 reward);
-     constructor(address _depositToken) {
+    event Withdrawn(address user, uint256 amount, uint256 reward);
+    constructor(address _depositToken) {
          depositToken = IERC20(_depositToken); 
     } 
     
